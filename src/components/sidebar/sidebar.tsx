@@ -59,7 +59,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
                     Give your money awesome space in cloud
                 </span>
                 <Button onClick={() => alert('Navigate to upgrade flow')}>
-                    Upgrade to Premium
+                    Upgrade to Preimmium
                 </Button>
             </div>
         </div>
