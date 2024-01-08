@@ -16,7 +16,7 @@ function App() {
                 <Section>
                     <Section.Content>
                         <PageHeader className={styles.header}>
-                            <PageHeader.Title>Weekly Sumup</PageHeader.Title>
+                            <PageHeader.Title>Weekly Summary</PageHeader.Title>
                             <PageHeader.Subtitle>
                                 Get summary of your weekly online transactions
                                 here
