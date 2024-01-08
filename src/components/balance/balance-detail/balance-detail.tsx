@@ -1,7 +1,7 @@
 import classNames from 'classnames';
-import styles from './cards-detail.module.scss';
+import styles from './balance-detail.module.scss';
 
-interface CardsDetailProps {
+interface BalanceDetailProps {
     className?: string;
     label: string;
     currency: string; //should be enum or from intl
@@ -10,14 +10,14 @@ interface CardsDetailProps {
     emphasized?: boolean;
 }
 
-export const CardsDetail = ({
+export const BalanceDetail = ({
     label,
     currency,
     amount,
     trend = 'neutral',
     emphasized = false,
     className,
-}: CardsDetailProps) => {
+}: BalanceDetailProps) => {
     const formattedAmount = new Intl.NumberFormat(undefined, {
         style: 'decimal',
         minimumFractionDigits: 2,

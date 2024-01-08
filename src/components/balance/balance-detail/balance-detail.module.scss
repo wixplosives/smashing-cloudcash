@@ -6,12 +6,15 @@
 .root {
     display: grid;
     justify-items: end;
+    height: 100%;
+    align-content: end;
 
     @media only screen and (min-width: #{$media-tablet + 1}) {
         grid-template-areas:
             'figure'
             'label';
     }
+
     @media only screen and (max-width: #{$media-tablet}) {
         grid-template-areas: 'label figure';
         grid-template-columns: 1fr 1fr;
@@ -19,6 +22,7 @@
         padding-top: $spacing-1;
         padding-bottom: $spacing-1;
         border-top: 1px solid $color-divider;
+        align-items: center;
     }
 }
 

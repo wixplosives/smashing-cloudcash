@@ -1,4 +1,4 @@
-import { Cards } from './components/cards/cards';
+import { Balance } from './components/balance/balance';
 import { DashboardLayout } from './components/dashboard-layout/dashboard-layout';
 import { Goals } from './components/goals/goals';
 import { OutcomeStatistics } from './components/outcome-statistics/outcome-statistics';
@@ -28,7 +28,7 @@ function App() {
                 <Section>
                     <Section.Content className={styles.dashboardGrid}>
                         <div className={styles.mainColumn}>
-                            <Cards />
+                            <Balance />
                             <TransactionHistory />
                         </div>
                         <div className={styles.secondaryColumn}>

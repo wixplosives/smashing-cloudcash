@@ -1,9 +1,9 @@
 import { createBoard } from '@wixc3/react-board';
-import { Cards } from '../../../components/cards/cards';
+import { Balance } from '../../../components/balance/balance';
 
 export default createBoard({
-    name: '🧩 Cards',
-    Board: () => <Cards />,
+    name: '🧩 Balance',
+    Board: () => <Balance />,
     environmentProps: {
         canvasWidth: 874,
     },

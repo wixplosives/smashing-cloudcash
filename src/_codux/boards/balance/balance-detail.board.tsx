@@ -1,14 +1,14 @@
 import { createBoard } from '@wixc3/react-board';
-import { CardsDetail } from '../../../components/cards/cards-detail/cards-detail';
+import { BalanceDetail } from '../../../components/balance/balance-detail/balance-detail';
 import { Doc } from '../../../util-components/documentation/doc';
 import { DocHeader } from '../../../util-components/documentation/doc-header';
 import { DocSection } from '../../../util-components/documentation/doc-section';
 
 export default createBoard({
-    name: '📒 Cards Detail',
+    name: '📒 Balance Detail',
     Board: () => (
         <Doc>
-            <DocHeader title="Cards Detail" />
+            <DocHeader title="Balance Detail" />
             <DocSection
                 title="Required Properties"
                 description={
@@ -32,9 +32,9 @@ export default createBoard({
                 }
                 contentLayout="grid3"
             >
-                <CardsDetail label="Income" currency="$" amount={20} />
-                <CardsDetail label="Income" currency="$" amount={1300} />
-                <CardsDetail label="Income" currency="$" amount={1300000} />
+                <BalanceDetail label="Income" currency="$" amount={20} />
+                <BalanceDetail label="Income" currency="$" amount={1300} />
+                <BalanceDetail label="Income" currency="$" amount={1300000} />
             </DocSection>
             <DocSection
                 title="Trend"
@@ -53,19 +53,19 @@ export default createBoard({
                 }
                 contentLayout="grid3"
             >
-                <CardsDetail
+                <BalanceDetail
                     trend="neutral"
                     label="Income"
                     currency="$"
                     amount={1300.0}
                 />
-                <CardsDetail
+                <BalanceDetail
                     trend="positive"
                     label="Income"
                     currency="$"
                     amount={1300.0}
                 />
-                <CardsDetail
+                <BalanceDetail
                     trend="negative"
                     label="Income"
                     currency="$"
@@ -76,7 +76,7 @@ export default createBoard({
                 title="Emphasis"
                 description={
                     <div>
-                        Use emphasized <code>CardsDetail</code> to create
+                        Use emphasized <code>BalanceDetail</code> to create
                         hierarchy
                         <ol>
                             <li>
@@ -90,13 +90,13 @@ export default createBoard({
                 }
                 contentLayout="grid3"
             >
-                <CardsDetail
+                <BalanceDetail
                     label="Income"
                     currency="$"
                     amount={1300.0}
                     emphasized
                 />
-                <CardsDetail label="Income" currency="$" amount={1300.0} />
+                <BalanceDetail label="Income" currency="$" amount={1300.0} />
             </DocSection>
         </Doc>
     ),
