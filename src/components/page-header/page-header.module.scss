@@ -13,10 +13,6 @@
 
 .utilities {
     @media only screen and (min-width: #{$media-tablet + 1}) {
-        display: flex;
-        align-items: center;
-        margin-top: $spacing-1;
-        column-gap: $spacing-3;
     }
 
     @media only screen and (max-width: #{$media-tablet}) {

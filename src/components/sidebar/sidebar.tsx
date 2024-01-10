@@ -58,9 +58,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
                 <span className={styles.footerText}>
                     Give your money awesome space in cloud
                 </span>
-                <Button onClick={() => alert('Navigate to upgrade flow')}>
-                    Upgrade to Preimmium
-                </Button>
+                <Button onClick={() => alert('Navigate to upgrade flow')}>Upgrade to Premium</Button>
             </div>
         </div>
     );

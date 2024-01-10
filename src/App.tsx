@@ -7,7 +7,7 @@ import { TransactionHistory } from './components/transaction-history/transaction
 import PageHeader from './components/page-header/page-header';
 import { NewTransaction } from './components/new-transaction/new-transaction';
 import { GetLoanBanner } from './components/get-loan-banner/get-loan-banner';
-import styles from './app.module.scss';
+import styles from './App.module.scss';
 
 function App() {
     return (
@@ -17,10 +17,6 @@ function App() {
                     <Section.Content>
                         <PageHeader className={styles.header}>
                             <PageHeader.Title>Weekly Summary</PageHeader.Title>
-                            <PageHeader.Subtitle>
-                                Get summary of your weekly online transactions
-                                here
-                            </PageHeader.Subtitle>
                         </PageHeader>
                     </Section.Content>
                 </Section>
