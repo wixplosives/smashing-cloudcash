@@ -14,11 +14,11 @@ interface CreditCardSvgProps {
 export const CreditCardSvg = ({
     className,
     logo,
-    cardNumberStartsWith,
-    cardNumberEndsWith,
-    cardHolderName,
-    expireDateMonth,
-    expireDateYear,
+    cardNumberStartsWith = '1234',
+    cardNumberEndsWith = '4242',
+    cardHolderName = 'Jane Smith',
+    expireDateMonth = '12',
+    expireDateYear = '27',
 }: CreditCardSvgProps) => {
     return (
         <div className={classNames(styles.root, className)}>
