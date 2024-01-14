@@ -10,28 +10,26 @@ export const Balance = ({ className }: BalanceProps) => {
     return (
         <Card className={className}>
             <Card.Title>Balance</Card.Title>
-            <Card.Content className={styles.content}>
-                <div className={styles.details}>
-                    <BalanceDetail
-                        currency="$"
-                        label="Current Balance"
-                        amount={12000}
-                        emphasized
-                    />
-                    <BalanceDetail
-                        currency="$"
-                        label="Income"
-                        amount={1500}
-                        trend="positive"
-                    />
-                    <BalanceDetail
-                        currency="$"
-                        label="Outcome"
-                        amount={350.2}
-                        trend="negative"
-                    />
-                </div>
-            </Card.Content>
+            <div className={styles.details}>
+                <BalanceDetail
+                    currency="$"
+                    label="Current Balance"
+                    amount={12000}
+                    emphasized
+                />
+                <BalanceDetail
+                    currency="$"
+                    label="Income"
+                    amount={1500}
+                    trend="positive"
+                />
+                <BalanceDetail
+                    currency="$"
+                    label="Outcome"
+                    amount={350.2}
+                    trend="negative"
+                />
+            </div>
         </Card>
     );
 };
