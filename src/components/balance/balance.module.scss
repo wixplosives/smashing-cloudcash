@@ -3,27 +3,19 @@
 @import '../../styles/spacing';
 
 .content {
-    @media only screen and (min-width: #{$media-mobile + 1}) and (max-width: #{$media-tablet}) {
-    }
+    @media only screen and (min-width: #{$media-mobile + 1}) and (max-width: #{$media-tablet}) {}
 }
 
-.creditCardSection {
-}
+.creditCardSection {}
 
-.creditCard {
-}
+.creditCard {}
 
 .details {
     flex-grow: 1;
-    display: grid;
+    display: flex;
     min-width: 12.5rem;
     text-align: end;
-
-    @media only screen and (min-width: #{$media-tablet + 1}) {
-        row-gap: $spacing-1-5;
-        grid-template-rows: none;
-        grid-template-columns: auto auto auto;
-        align-items: center;
-        justify-content: space-evenly;
-    }
+    align-items: end;
+    justify-content: space-evenly;
+    gap: 20px;
 }
