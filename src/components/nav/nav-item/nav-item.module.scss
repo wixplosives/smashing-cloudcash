@@ -13,7 +13,7 @@
     cursor: pointer;
 
     &:hover {
-        background-color: #feffdb;
+        background-color: $color-lightest-blue;
         color: $color-accent;
     }
 
@@ -29,5 +29,4 @@
 
 .selected {
     background-color: $color-lightest-blue;
-    color: $color-accent;
 }
