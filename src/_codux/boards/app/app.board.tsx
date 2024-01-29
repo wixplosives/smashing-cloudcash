@@ -6,11 +6,12 @@ export default createBoard({
     Board: () => <App />,
     isSnippet: true,
     environmentProps: {
-        windowWidth: 1096,
+        windowWidth: 1020,
         canvasMargin: {
             left: 0,
             right: 0,
-            top: 1
-        }
+            top: 1,
+        },
+        windowHeight: 836,
     },
 });
